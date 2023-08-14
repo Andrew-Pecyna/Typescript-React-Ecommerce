@@ -6,9 +6,12 @@ export function Home() {
     const { openCart, cartQuantity } = useShoppingCart()
 
     return (
-        <Container>
-            <Nav className="me-auto d-flex justify-content-between" style={{backgroundColor: "lightgreen"}}>
-                <h1>wearables</h1>
+        <div className="container-fluid p-0">
+            <div className="d-flex justify-content-center align-items-center" style={{backgroundColor: "#FFE800", color: "black", height: "3.5rem"}}>
+                <h3 className="m-0">EXTRA 25% OFF SELECT STYLES</h3>
+            </div>
+            <Nav className="me-auto d-flex justify-content-between p-3 mb-4" style={{ borderBottom: "2px solid lightgrey" }}>
+                <h1 style={{fontSize: "50px"}}>wearables</h1>
                 <div className="d-flex">
                     <Nav.Link to="/store" as={NavLink}>Store</Nav.Link>
                     <Nav.Link to="/about" as={NavLink}>About</Nav.Link>
@@ -40,8 +43,8 @@ export function Home() {
                 </div>
             </Nav>
             <div style={{backgroundColor: "skyblue"}}>
-                <p>Home</p>
+                <img src="imgs/running.jpg" style={{objectFit: "cover", width: "100%", maxHeight: "700px", minHeight: "600px" }}/>
             </div>
-        </Container>
+        </div>
     )
 }
