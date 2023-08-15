@@ -1,4 +1,4 @@
-import { Container, Nav, Button } from "react-bootstrap"
+import { Container, Nav, Button, Row, Card } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 
@@ -7,11 +7,11 @@ export function Home() {
 
     return (
         <div className="container-fluid p-0">
-            <div className="d-flex justify-content-center align-items-center" style={{backgroundColor: "#FFE800", color: "black", height: "3.5rem"}}>
+            <div className="d-flex justify-content-center align-items-center" style={{backgroundColor: "#C1FE86", color: "black", height: "4rem"}}>
                 <h3 className="m-0">EXTRA 25% OFF SELECT STYLES</h3>
             </div>
-            <Nav className="me-auto d-flex justify-content-between p-3 mb-4" style={{ borderBottom: "2px solid lightgrey" }}>
-                <h1 style={{fontSize: "50px"}}>wearables</h1>
+            <Nav className="me-auto d-flex justify-content-between pb-2 pt-3 ps-5 pe-5" style={{ borderBottom: "2px solid lightgrey" }}>
+                <h1 style={{letterSpacing: "3px"}}>wearables</h1>
                 <div className="d-flex">
                     <Nav.Link to="/store" as={NavLink}>Store</Nav.Link>
                     <Nav.Link to="/about" as={NavLink}>About</Nav.Link>
@@ -42,8 +42,30 @@ export function Home() {
                 </Button>}
                 </div>
             </Nav>
+            <div style={{height: "2rem"}}>
+            </div>
             <div style={{backgroundColor: "skyblue"}}>
                 <img src="imgs/running.jpg" style={{objectFit: "cover", width: "100%", maxHeight: "700px", minHeight: "600px" }}/>
+            </div>
+            <div className="container-fluid mt-4 mb-4 ps-5 pe-5">
+                <Row xs={1} md={2} lg={2} xl={4} className="g-3">
+                    <div>
+                        <img src="imgs/homePic1.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} />
+                        <p>Performance Wear</p>  
+                    </div>
+                    <div>
+                        <img src="imgs/homePic3.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} /> 
+                        <p>Wearable Tech</p> 
+                    </div>
+                    <div>
+                        <img src="imgs/homePic2.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} /> 
+                        <p>Women's Styles</p> 
+                    </div>
+                    <div>
+                        <img src="imgs/homePic4.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} /> 
+                        <p>Men's Styles</p>
+                    </div>
+                </Row>
             </div>
         </div>
     )
