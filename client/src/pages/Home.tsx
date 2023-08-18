@@ -8,18 +8,18 @@ export function Home() {
     return (
         <div className="container-fluid p-0">
             <div className="sticky-top">
-                <div className="d-flex justify-content-center align-items-center" style={{backgroundColor: "rgb(192, 220, 241)", color: "black", height: "4rem"}}>
-                    <h3 className="m-0">EXTRA 25% OFF SELECT STYLES</h3>
+                <div className="d-flex justify-content-center align-items-center" style={{backgroundColor: "rgb(192, 220, 241)", color: "#C1FAFF", height: "4rem"}}>
+                    <h3 className="m-0" style={{fontFamily: "monospace"}}>EXTRA 25% OFF SELECT STYLES</h3>
                 </div>
                 <Nav className="me-auto d-flex justify-content-between pb-2 pt-3 ps-5 pe-5" style={{backgroundColor: "white", borderBottom: "2px solid lightgrey" }}>
                     <h1 style={{letterSpacing: "3px"}}>wearables.</h1>
                     <div className="d-flex">
-                        <Nav.Link to="/store" as={NavLink}>Store</Nav.Link>
-                        <Nav.Link to="/about" as={NavLink}>About</Nav.Link>
+                        <Nav.Link to="/store" as={NavLink} style={{color: "black"}}>Store</Nav.Link>
+                        <Nav.Link to="/about" as={NavLink} style={{color: "black"}}>About</Nav.Link>
                         {cartQuantity > 0 && <Button 
                         onClick={openCart}
-                        style={{width: "3rem", height: "3rem", position: "relative"}}
-                        variant="outline-primary"
+                        style={{width: "3rem", height: "3rem", position: "relative", color: "black"}}
+                        variant="outline-secondary"
                         className="rounded-circle">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -46,10 +46,9 @@ export function Home() {
             </div>
             <div style={{height: "2rem"}}>
             </div>
-            <div className="d-flex justify-content-center align-items-end" style={{backgroundImage: "url(imgs/running.jpg)", height: "700px", maxWidth: "100%", backgroundSize: "cover", backgroundPosition: "center"}}>
-                {/* <img src="imgs/running.jpg" style={{ position: "relative", objectFit: "cover", width: "100%", maxHeight: "700px", minHeight: "600px" }}/> */}
+            <div className="d-flex justify-content-center align-items-end" style={{backgroundImage: "url(imgs/running.jpg)", height: "600px", maxWidth: "100%", backgroundSize: "cover", backgroundPosition: "center"}}>
                 <Link to={"/store"}>
-                    <Button className="mb-5 rounded-0" style={{ width: "200px", backgroundColor: "white", color: "black", border: " 1px solid black"}}>
+                    <Button className="mb-4 rounded-0" style={{ width: "200px", backgroundColor: "white", color: "black", border: " 1px solid black"}}>
                         Shop All Styles
                     </Button>
                 </Link>
@@ -58,19 +57,27 @@ export function Home() {
                 <Row xs={1} md={2} lg={2} xl={4} className="g-3">
                     <div>
                         <img src="imgs/homePic1.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} />
-                        <p>Performance Wear</p>  
+                        <Link to={"/store"} style={{color: "black"}}>
+                            <p className="mt-4">Performance Wear</p> 
+                        </Link>
                     </div>
                     <div>
                         <img src="imgs/homePic3.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} /> 
-                        <p>Wearable Tech</p> 
+                        <Link to={"/store"} style={{color: "black"}}>
+                            <p className="mt-4">Wearable Tech</p> 
+                        </Link>
                     </div>
                     <div>
                         <img src="imgs/homePic2.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} /> 
-                        <p>Women's Styles</p> 
+                        <Link to={"/store"} style={{color: "black"}}>
+                            <p className="mt-4">Women's Styles</p> 
+                        </Link>
                     </div>
                     <div>
-                        <img src="imgs/homePic4.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} /> 
-                        <p>Men's Styles</p>
+                        <img src="imgs/homePic4.jpg" style={{objectFit: "cover", height: "400px", width: "100%"}} />
+                        <Link to={"/store"} style={{color: "black"}}>
+                            <p className="mt-4">Men's Styles</p>
+                        </Link> 
                     </div>
                 </Row>
             </div>

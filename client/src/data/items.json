@@ -1,26 +1,56 @@
 [
     {
         "id": 1,
-        "name": "Book",
-        "price": 10.99,
-        "imgUrl": "/imgs/book.jpeg"
+        "name": "Men's Outerwear Shell",
+        "price": 75.99,
+        "imgUrl": "/imgs/wearables1.jpg"
     },
     {
         "id": 2,
-        "name": "Computer",
-        "price": 1199,
-        "imgUrl": "/imgs/computer.jpeg"
+        "name": "Women's Crop Top",
+        "price": 29.99,
+        "imgUrl": "/imgs/wearables2.jpg"
     },
     {
         "id": 3,
-        "name": "Banana",
-        "price": 1.05,
-        "imgUrl": "/imgs/banana.jpeg"
+        "name": "Men's Basic T",
+        "price": 25.99,
+        "imgUrl": "/imgs/wearables3.jpg"
     },
     {
         "id": 4,
-        "name": "Car",
-        "price": 14000,
-        "imgUrl": "/imgs/car.jpeg"
+        "name": "Women's Running Set",
+        "price": 79.99,
+        "imgUrl": "/imgs/wearables4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Unisex Running Shoes",
+        "price": 109.99,
+        "imgUrl": "/imgs/wearables5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Men's Puffer Coat",
+        "price": 209.99,
+        "imgUrl": "/imgs/wearables6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Fitness watch",
+        "price": 99.99,
+        "imgUrl": "/imgs/wearables7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Women's Yoga Set",
+        "price": 79.99,
+        "imgUrl": "/imgs/wearables8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Smart watch",
+        "price": 499.99,
+        "imgUrl": "/imgs/wearables9.jpg"
     }
 ]
