@@ -1,8 +1,9 @@
-import { Offcanvas, Stack } from "react-bootstrap";
+import { Button, Offcanvas, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { CartItem } from "./CartItem";
 import { formatCurrency } from "../utilities/formatCurrency";
 import storeItems from "../data/items.json"
+import { Link } from "react-router-dom";
 
 type ShoppingCartProps = {
     isOpen: boolean
@@ -30,6 +31,12 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                             }, 0)
                         )}
                     </div>
+                    { cartItems.length > 0 &&
+                    <Link to={"/checkout"}>
+                        <Button onClick={() => closeCart()}>
+                            Proceed to Checkout
+                        </Button>
+                    </Link>}
                 </Stack>
             </Offcanvas.Body>
         </Offcanvas>
